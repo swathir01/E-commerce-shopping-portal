@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Home</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"> 
+<link rel="stylesheet" type="text/css" href="style.css">
+<style>
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 500px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+}
+
+.price {
+  color: grey;
+  font-size: 10px;
+}
+
+.card button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 80%;
+  height: 5%;
+  font-size: 12px;
+}
+
+.card button:hover {
+  opacity: 0.7;
+}
+</style>
+</head>
+<body>
+	<header>
+		<h1>
+			ThapaCafe
+		</h1>
+		<nav>
+			<ul>
+				<li><a href="all-products.html">Home</a></li>
+				<li><a href="cart.jsp">cart</a></li>
+			</ul>
+		</nav>
+	</header>
+	
+	<div class="tiazon-content">
+ 	<div class="container">
+ 		<div class="row">
+ 				<div class="col-md-4"><!-- left -->
+ 						<div class="list-group"><!-- products -->
+						  <a href="all-products.html" class="list-group-item" style="background:  #d6d4d3;">
+						    All Products
+						  </a>
+						  <a href=cakes.html"" class="list-group-item">Cakes</a>
+						  <a href="cookies.html" class="list-group-item">Cookies</a>
+						  <a href="candy.html" class="list-group-item">Candies</a>
+						</div> 
+ 				</div><!-- left -->
+
+ 				<div class="col-md-8"><!-- right -->
+ 					<h2 style="text-align: center;">CANDY SHOWER</h2><br>
+
+		 					<div align="right">
+                              <div class="card">
+                                 <table style="width: 100%">
+                                      <tr>
+                                     <td width="50%">
+                                       <form action="Addtocart"  method="post" name="cakes" style="width: 80%; border:none;"> 
+                                       <img src="loli.jpg" alt="LOLI" style="width:50%">
+                                       <h5>Candy lolipop</h5>
+                                       <input type="hidden" name="order" value="candy lolipop">
+                                       <input type="hidden" name="ordercost" value="55" />                                       
+                                       <input type="text" name="quan" style="border-color: black;width: 30%" />
+                                        <p class="price">$55.00</p>
+                                      <input type="submit" class="button" name="AddtoCart" value="ADD TO CART">
+                                    </form>
+                                      </td>
+                                    
+                                        <td width="50%">
+                                        <form action="Addtocart"  method="post" name="cakes" style="width: 80%; border:none;">  
+                                       <img src="valen.jpg" alt="Valentine candy" style="width:50%">
+                                       <h5>Valentine</h5>
+                                       <input type="hidden" name="order" value="Valentine">
+                                       <input type="hidden" name="ordercost" value="151" />                                       
+                                       <input type="text" name="quan" style="border-color: black;width: 30%" />
+                                        <p class="price">$151.00</p>
+                                       <input type="submit" class="button" name="AddtoCart" value="ADD TO CART">
+                                    </form>
+                                      </td>
+                                    </tr>
+                                    <tr>
+                                      <td width="50%">
+                                       <form action="Addtocart"  method="post" name="cakes" style="width: 80%; border:none;"> 
+                                       <img src="love.jpg" alt="LOVE" style="width:50%">
+                                       <h5>LOVE Candy</h5>
+                                       <input type="hidden" name="order" value="LOVE candy">
+                                       <input type="hidden" name="ordercost" value="255" />                                       
+                                       <input type="text" name="quan" style="border-color: black;width: 30%" />
+                                        <p class="price">$255.00</p>
+                                       <input type="submit" class="button" name="AddtoCart" value="ADD TO CART">
+                                    </form>
+                                      </td>
+                                    
+                                        <td width="50%">
+                                         <form action="Addtocart"  method="post" name="cakes" style="width: 80%; border:none;"> 
+                                       <img src="gems.jpg" alt="GEMS" style="width:50%">
+                                       <h5>GEMS</h5>
+                                       <input type="hidden" name="order" value="Gems">
+                                       <input type="hidden" name="ordercost" value="50" />                                       
+                                       <input type="text" name="quan" style="border-color: black;width: 30%" />
+                                        <p class="price">$50.00</p>
+                                       <input type="submit" class="button" name="AddtoCart" value="ADD TO CART">
+                                    </form>
+                                      </td>
+                                    </tr>
+                                    <tr>
+                                      <td width="50%">
+                                       <form action="Addtocart"  method="post" name="cakes" style="width: 80%; border:none;"> 
+                                       <img src="ring.jpg" alt="COUPLE SPECIAL CANDY" style="width:50%">
+                                       <h5>COUPLE CANDY</h5>
+                                       <input type="hidden" name="order" value="couple candy">
+                                       <input type="hidden" name="ordercost" value="100" />                                       
+                                       <input type="text" name="quan" style="border-color: black;width: 30%" />
+                                        <p class="price">$100.00</p>
+                                       <input type="submit" class="button" name="AddtoCart" value="ADD TO CART">
+                                    </form>
+                                      </td>
+                                       </tr>
+
+                                          </table>
+                                  </div>
+		 					</div> 					
+ 					 							
+		 					
+ 				</div>
+ 			</div>
+ 		</div>
+ 	</div>
+	
+	
+	<footer>
+		<div class="footer"> &copy; 2018 Copyright:
+	      <a href=""> ThapaCafe.com</a>
+	    </div>
+	</footer>
+	
+</body>
+</html>

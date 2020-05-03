@@ -1,0 +1,57 @@
+
+<html>  
+<head>  
+<script>  
+var request;  
+function sendInfo()  
+{  
+var v=document.vinform.t1.value;  
+var url="view.jsp?val="+v;  
+  
+if(window.XMLHttpRequest){  
+request=new XMLHttpRequest();  
+}  
+else if(window.ActiveXObject){  
+request=new ActiveXObject("Microsoft.XMLHTTP");  
+}  
+  
+try{  
+request.onreadystatechange=getInfo;   
+request.open("GET",url,true);  
+request.send();  
+}catch(e){alert("Unable to connect to server");}  
+}  
+  
+function getInfo(){  
+if(request.readyState==4){  
+var val=request.responseText;  
+document.getElementById('amit').innerHTML=val;  
+}  
+}  
+  
+</script> 
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"> 
+<link rel="stylesheet" type="text/css" href="style.css"> 
+</head>  
+<body>  
+		<header>
+		<h1>
+			ThapaCafe
+		</h1>
+		<nav>
+			<ul>
+				<li><a href="admin.jsp">Home</a></li>
+			
+			</ul>
+		</nav>
+	</header>
+    <marquee><h1>REGISTERED USERS</h1></marquee>  
+<form name="vinform">  
+Enter NAME:<input type="text" name="t1" onkeyup="sendInfo()"> 
+</form>  
+  
+<br><span id="amit" style="color:red;font-weight: bold"><br> </span>  
+  
+
+</body>  
+</html>
