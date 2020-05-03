@@ -1,4 +1,4 @@
-Create a dynamic e-commerce shopping cart using j2ee technologies like servlets, jsp, JDBC, Jstl, Javascript and AJAX script.
+Create a dynamic e-commerce shopping cart using j2ee technologies like servlets, jsp, JDBC, Jstl, and Javascript, AJAX script.
 
 Installation:
 
